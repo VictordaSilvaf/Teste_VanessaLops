@@ -1,0 +1,114 @@
+$Amarelo: #FBAF17;
+$Azul-mais-Escuro: #202332;
+$White: #FFF;
+$Dark-Gray: #333;
+
+.container-category {
+    display: flex;
+    justify-content: center;
+    /* Center the child items horizontally */
+    background: var(--Azul-mais-Escuro, #202332);
+    border-radius: 0px 15px 0px 0px;
+    flex-direction: row;
+    height: 800px;
+
+}
+
+.container-c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-c svg {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 200px;
+}
+
+.container-c h2 {
+    margin-left: 10px;
+    /* Adjust this margin as needed */
+    color: $White;
+    right: 60px;
+    position: relative;
+    bottom: 120px;
+}
+.container-card{
+    margin-bottom: 0px;
+    position: absolute;
+    flex-direction: row;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    min-width: 150px;
+    display: flex;
+    margin-top:900px;
+
+}
+.container-cards {
+    margin-bottom: 0px;
+    position: absolute;
+    flex-direction: row;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    min-width: 150px;
+    display: flex;
+    margin-top: 200px;
+
+}
+
+h6 {
+    color: var(--Amarelo, #FBAF17);
+    font-family: Gotham;
+    font-size: 22px;
+    margin: 1px;
+  
+}
+
+/* Estilização básica do cartão de categoria */
+.category-card {
+    border-radius: 70px;
+    width: 250px;
+    flex-shrink: 0;
+ padding: 20px;
+
+}
+
+.category-card-item {
+    height: 258px; 
+    text-align: center;
+    align-items: stretch !important;
+    align-self: stretch !important;
+    justify-content: stretch !important;
+    transition: transform 0.2s;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    border-radius: 70px;
+    background: linear-gradient(180deg, #FBAF17 0%, #FBA017 100%);
+  
+}
+
+
+.category-card h3 {
+
+    color: #333;
+
+    margin: 10px 0;
+ 
+}
+
+
+.category-card .category-icon {
+    height: auto;
+
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

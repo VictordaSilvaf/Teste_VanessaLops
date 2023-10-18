@@ -1,0 +1,41 @@
+.container-footer-sales {
+    background-image: url('../images//main/main-sales.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 292px;
+    
+}
+
+.container-footer-sales-row {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 80px;
+}
+
+#z-1 {
+    z-index: 1;
+    margin-right: 200px;
+    position: absolute;
+    text-align: start;
+    top:200px;
+}
+
+#z-2 {
+    z-index: 2;
+    position: relative;
+   
+}
+
+#z-3 {
+    z-index: 3;
+    position: absolute;
+    bottom: 80px;
+    left: 280px;
+}

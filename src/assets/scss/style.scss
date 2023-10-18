@@ -1,0 +1,230 @@
+$Amarelo: #FBAF17;
+$Azul-mais-Escuro: #202332;
+$White: #FFF;
+$speed: 500ms;
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--White, #FFF);
+    color: var(--White);
+}
+
+.left-image {
+    width: 156px;
+    height: 80px;
+}
+
+.logo {
+    margin-left: 120px;
+    margin-right: 80px;
+}
+
+.navbar {
+    width: calc(100% - 700px);
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 150px 0px 0px 150px;
+    background: var(--Amarelo, #FBAF17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px;
+
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-right: 150px;
+}
+
+.navbar li {
+    margin-right: 20px;
+    position: relative;
+}
+.navbar li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.navbar li a {
+    color: var(--Azul-mais-Escuro, #202332);
+    font-family: Gotham;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.54px;
+    text-decoration: none;
+
+}
+
+
+.navbar li.categoria:after {
+    margin-left: 5px;
+}
+
+.navbar li.selected a {
+    color: var(--Azul-mais-Escuro, #202332);
+    font-weight: 500;
+}
+
+.navbar li.selected::before {
+    content: "";
+    width: 50px;
+    height: 4px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: var(--White, #FFF);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon {
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.custom-button {
+    border-radius: 10px;
+    background: var(--Azul-mais-Escuro, #202332);
+    color: var(--White, #FFF);
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: absolute;
+    width: 142px;
+    height: 42px;
+    flex-shrink: 0;
+    top: -10px;
+
+}
+
+
+.menu-trigger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+
+.dropdown-menu-s {
+
+    z-index: 999999;
+}
+
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    background: var(--secondary-bg);
+    transform: rotate(45deg);
+}
+
+.dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+}
+
+.dropdown-menu.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--speed) ease;
+}
+
+
+h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--primary-text-color);
+    line-height: 1.2rem;
+}
+
+h3 span {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    font-weight: 400;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-menu ul li:hover a {
+    color: rgb(212, 33, 9);
+    cursor: pointer;
+}
+
+.dropdown-menu ul li:hover img {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.dropdownItem {
+
+    margin: -50px auto;
+}
+
+.dropdownItem img {
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: var(--speed);
+}
+
+.dropdownItem a {
+    max-width: 100px;
+    margin-left: 10px;
+    transition: var(--speed);
+}
+
+.custom-div {
+    width: 420px;
+    height: 835px;
+    background-color: white;
+    filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, 0.2));
+    position: relative;
+}
+
+.custom-div::before {
+    content: '';
+    position: absolute;
+    top: -8;
+    left: 50%;
+    transform: rotate(45deg);
+    width: 20px;
+    height: 4px;
+    background-color: #ff0000; /* Cor da linha (substitua pela cor desejada) */
+}
+.inner-content {
+    /* Estilos para o conteúdo dentro da div */
+    padding: 20px;
+    font-size: 16px;
+    color: #000;
+
+}
